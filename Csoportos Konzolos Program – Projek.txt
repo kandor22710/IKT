@@ -1,0 +1,37 @@
+Csoportos Konzolos Program – Projekt Dokumentáció
+
+1. Feladat megfogalmazása
+A feladat egy C# konzolos alkalmazás készítése, amely egy .txt állományból programok adatait olvassa be, objektumokká alakítja, feldolgozza, majd megjeleníti. A feldolgozás része a programok listázása, darabszámuk meghatározása, illetve a legrégebbi kiadású program megkeresése.
+
+2. A .txt állomány elkészítése
+
+A projektben a következő struktúrájú állomány kerül felhasználásra (program.txt):
+Chrome;Böngésző;2018
+Discord;Közösségi alkalmazás;2020
+Visual Studio;Fejlesztői környezet;2017
+Steam;Játékplatform;2015
+Photoshop;Képszerkesztő;2019
+
+3. UML Osztálydiagram (szöveges formában)
+
+┌──────────────────────┐
+│      ProgramAdat     │
+├──────────────────────┤
+│ + Nev: string        │
+│ + Kategoria: string  │
+│ + Ev: int            │
+├──────────────────────┤
+│ + ProgramAdat(sor)   │
+└──────────────────────┘
+
+4. Algoritmus leírása
+
+	1. A program megnyitja a 'program.txt' fájlt.
+	2. Soronként beolvassa az adatokat.
+	3. Minden sorból ProgramAdat objektumot hoz létre.
+	4. A létrehozott objektumokat egy listába helyezi.
+	5. Kiírja az összes program adatait.
+	6. Megszámolja az elemek számát.
+	7. Megkeresi a legkorábban kiadott programot.
+	8. Megjeleníti az eredményeket.
+
